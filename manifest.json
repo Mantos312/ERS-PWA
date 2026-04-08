@@ -1,10 +1,11 @@
 {
-  "name": "Event Registration System",
-  "short_name": "ERS Pro",
+  "name": "Ersiman App",
+  "short_name": "Ersiman",
   "start_url": "https://ersimanapis.streamlit.app/",
   "display": "standalone",
-  "background_color": "#f8fafc",
-  "theme_color": "#4f46e5",
+  "background_color": "#ffffff",
+  "theme_color": "#0e1117",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "icon.png",

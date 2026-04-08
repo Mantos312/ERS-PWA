@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Ersiman App</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.png" />
+
+  <meta name="theme-color" content="#0e1117" />
+
+  <!-- iOS support -->
+  <link rel="apple-touch-icon" href="icon.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+</head>
+
+<body style="margin:0; padding:0; overflow:hidden;">
+  
+  <iframe 
+    src="https://ersimanapis.streamlit.app/" 
+    style="border:none; width:100vw; height:100vh;">
+  </iframe>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("Service Worker Registered"));
+    }
+  </script>
+
+</body>
+</html>
